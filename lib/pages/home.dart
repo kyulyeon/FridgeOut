@@ -13,7 +13,7 @@ class _homePageState extends State<homePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      body: NavBar()
+      body: NavBar(),
     );
   }
 }

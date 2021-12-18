@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:fridge_out/pages/allrecipes.dart';
+import 'package:fridge_out/pages/home.dart';
 
 class slidingNav extends StatelessWidget {
   final padding = EdgeInsets.symmetric(horizontal: 20);
@@ -25,13 +27,22 @@ class slidingNav extends StatelessWidget {
               title: Text(
                   'Home',
               style: TextStyle(color: Colors.white, fontSize: 25)),
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => homePage()));
+              },
             ),
           ),
           ListTile(
             leading: Icon(Icons.menu_book),
             title: Text(
                 'All Recipes',
-                style: TextStyle(color: Colors.white, fontSize: 25)),
+                style: TextStyle(color: Colors.white, fontSize: 25),
+            ),
+            onTap: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => AllRecipes()));
+            },
           ),
           ListTile(
             leading: Icon(Icons.settings),
