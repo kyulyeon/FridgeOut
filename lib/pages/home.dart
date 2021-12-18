@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fridge_out/customwidgets/recipeoftheday.dart';
 import 'package:fridge_out/customwidgets/nav.dart';
 import 'package:fridge_out/customwidgets/slideinbar.dart';
 
@@ -13,7 +14,15 @@ class _homePageState extends State<homePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      body: NavBar()
+      body: Container(
+        child: Stack(
+          children: [
+            Container(
+              child: NavBar(),
+            ),
+          ]
+        )
+      ),
     );
   }
 }
