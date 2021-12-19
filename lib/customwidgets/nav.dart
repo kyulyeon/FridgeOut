@@ -21,7 +21,7 @@ class _NavBarState extends State<NavBar> {
           Icon(Icons.search),
         ],
       ),
-        body: Center(
+        body: Container(
           child: SingleChildScrollView(
             child: Column(
               children: [
