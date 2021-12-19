@@ -1,6 +1,5 @@
 
 # Fridge Out
-==============
 Fridge Out is a mobile application developed using Flutter for BCIT's Winter 2021 Hackathon Project.
 The premise of this application is to solve a key problem relating to food waste. 
 Most of the waste — or 61 per cent — happens in households. To solve this issue, we created Fridge Out – a solution to solving wasted food produces.
