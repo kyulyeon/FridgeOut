@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fridge_out/pages/home.dart';
+import 'package:fridge_out/pages/searchingredient.dart';
 import 'package:fridge_out/pages/loading.dart';
 
 
