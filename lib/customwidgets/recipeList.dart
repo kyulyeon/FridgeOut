@@ -52,14 +52,14 @@ class _RecipeListState extends State<RecipeList> {
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(15),
                   image: DecorationImage(
-                      image: NetworkImage('assets/pizza.jpg')
+                      image: NetworkImage('assets/salad.jpg')
                   ),
               ),
               child: Center(
                   child: Align(
                     alignment: Alignment.bottomCenter,
                     child: Text(
-                        "Pizza",
+                        "Salad",
                         style: TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.bold,
@@ -74,14 +74,14 @@ class _RecipeListState extends State<RecipeList> {
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(15),
                   image: DecorationImage(
-                      image: NetworkImage('assets/pizza.jpg')
+                      image: NetworkImage('assets/noodle.jpg')
                   )
               ),
               child: Center(
                   child: Align(
                     alignment: Alignment.bottomCenter,
                     child: Text(
-                        "Pizza",
+                        "Noodles",
                         style: TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.bold,
@@ -96,14 +96,14 @@ class _RecipeListState extends State<RecipeList> {
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(15),
                   image: DecorationImage(
-                      image: NetworkImage('assets/pizza.jpg')
+                      image: NetworkImage('assets/sushi.jpg')
                   )
               ),
               child: Center(
                   child: Align(
                     alignment: Alignment.bottomCenter,
                     child: Text(
-                        "Pizza",
+                        "Sushi",
                         style: TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.bold,
@@ -118,14 +118,14 @@ class _RecipeListState extends State<RecipeList> {
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(15),
                   image: DecorationImage(
-                      image: NetworkImage('assets/pizza.jpg')
+                      image: NetworkImage('assets/pasta.jpg')
                   )
               ),
               child: Center(
                   child: Align(
                     alignment: Alignment.bottomCenter,
                     child: Text(
-                        "Pizza",
+                        "Pasta",
                         style: TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.bold,
@@ -140,14 +140,14 @@ class _RecipeListState extends State<RecipeList> {
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(15),
                   image: DecorationImage(
-                      image: NetworkImage('assets/pizza.jpg')
+                      image: NetworkImage('assets/rice.jpg')
                   )
               ),
               child: Center(
                   child: Align(
                     alignment: Alignment.bottomCenter,
                     child: Text(
-                        "Pizza",
+                        "Fried Rice",
                         style: TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.bold,
