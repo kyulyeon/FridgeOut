@@ -1,20 +1,36 @@
 
-# FridgeOut
-=======
-# fridge_out
+# Fridge Out
+Fridge Out is a mobile application developed using Flutter for BCIT's Winter 2021 Hackathon Project.
 
-BCIT Winter 2021 Hackathon Project
+The premise of this application is to solve a key problem relating to food waste. 
+Most of the waste — or 61 per cent — happens in households. To solve this issue, we created 
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+Fridge Out – a solution to solving wasted food produces.
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+Most recipes offered through a simple good search of recipes book requires an individual to have already purchased the specific ingredients; however,
+instead of wasting time and money gathering the required ingredients, Fridge Out will offer recipe suggestions based on the user's available 
+ingredients found in their fridge.
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+Due to the nature of a Hackathon, there is no backend linked to this application; as a result, all data are hard coded in
+
+## Members
+
+* Eric Kwon
+* Sung Jae Hong
+* Victor Cheung
+* Maggie Dou
+
+## Tools Used
+
+* Flutter
+
+## This repo is organized as
+
+* main.dart – The entry point of the mobile application
+* pages - contains all the routed pages 
+* customwidgets - contains all the re-usable widgets used throughout the application
+
 
