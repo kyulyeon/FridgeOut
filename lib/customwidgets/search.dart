@@ -50,15 +50,63 @@ class Search extends SearchDelegate<String> {
     // show some result based on the selection
     return Center(
       child: Container(
-        height: 100.0,
-        width: 100.0,
+        height: MediaQuery.of(context).size.width * 0.95,
+        width: MediaQuery.of(context).size.width * 0.90,
         child: Card(
-          color: Colors.amber,
-          child: Center(
-            child: Text(query)
-          )
+          color: Colors.grey[50],
+          child: Column(
+            children: [
+              Container(
+                padding: EdgeInsets.only(left: 20, top: 20),
+                child:
+                Row(
+                  crossAxisAlignment: CrossAxisAlignment.end,
+                  children: [
+                    Text("Scrambled Egg".toUpperCase()),
+                  ],
+                ),
+              ),
+              SizedBox(height: 20),
+              Container(
+                padding: EdgeInsets.only(left: 20),
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.end,
+                  children: [
+                    Icon(
+                      Icons.timer_rounded,
+                      size: 20,
+                      color: Colors.black.withOpacity(0.6),
+                    ),
+                    Text(
+                        "15 min",
+                        style: TextStyle(
+                          fontSize: 14,
+                          color: Colors.black.withOpacity(0.6),
+                        )
+                    )
+                  ],
+                ),
+              ),
+              SizedBox(height: 30),
+              Divider(
+                color: Colors.black,
+              ),
+              Container(
+                padding: EdgeInsets.only(left: 20, top: 40),
+                child: Text(
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed "
+                      "do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+                      "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi "
+                      "ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit "
+                      "in voluptate velit esse cillum dolore eu fugiat nulla pariatur. "
+                      "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia "
+                      "deserunt mollit anim id est laborum."
+                ),
+              )
+            ]
+          ),
         ),
-      ),
+      )
     );
   }
 
