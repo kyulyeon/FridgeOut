@@ -1,5 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:fridge_out/pages/IngredientModel.dart';
+class SearchByIngredients extends StatelessWidget {
+
+  @override
+  Widget build(BuildContext context) {
+    return Container();
+  }
+}
 
 class HomePage extends StatefulWidget {
   @override
