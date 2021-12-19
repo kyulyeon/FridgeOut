@@ -1,7 +1,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+<<<<<<< HEAD
     package="com.example.fridge_out">
    <application
         android:label="fridge_out"
+=======
+    package="com.example.a">
+   <application
+        android:label="a"
+>>>>>>> sungjae
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
