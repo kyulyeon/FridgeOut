@@ -65,6 +65,7 @@ class slidingNav extends StatelessWidget {
               await Future.delayed(const Duration(seconds: 1), (){});
               Navigator.push(context,
                   MaterialPageRoute(builder: (context) => SearchByIngredients()));
+
             },
           ),
           ListTile(
