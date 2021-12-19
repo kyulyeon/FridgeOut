@@ -5,6 +5,7 @@ import 'package:fridge_out/customwidgets/recipeList.dart';
 import 'package:fridge_out/customwidgets/recipeoftheday.dart';
 import 'package:fridge_out/customwidgets/recipeselection.dart';
 import 'package:fridge_out/customwidgets/slideinbar.dart';
+import 'package:fridge_out/pages/refinedsearch.dart';
 
 class SearchByIngredients extends StatefulWidget {
   @override
@@ -65,7 +66,8 @@ class _SearchByIngredientsState extends State<SearchByIngredients> {
                       ),
                     ),
                     onPressed: () {
-                      print("Searchh: ${selectedContacts.length}");
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => RecipePage()));
                     },
                   ),
                 ),
