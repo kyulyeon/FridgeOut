@@ -30,14 +30,14 @@ class _RecipeListState extends State<RecipeList> {
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(15),
                 image: DecorationImage(
-                  image: NetworkImage('assets/pizza.jpg')
+                  image: NetworkImage('assets/pasta.jpg')
                 ),
               ),
               child: Center(
                 child: Align(
                   alignment: Alignment.bottomCenter,
                   child: Text(
-                    "Pizza",
+                    "Pasta",
                     style: TextStyle(
                       fontSize: 20,
                       fontWeight: FontWeight.bold,
@@ -74,14 +74,14 @@ class _RecipeListState extends State<RecipeList> {
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(15),
                   image: DecorationImage(
-                      image: NetworkImage('assets/noodle.jpg')
+                      image: NetworkImage('assets/pizza.jpg')
                   )
               ),
               child: Center(
                   child: Align(
                     alignment: Alignment.bottomCenter,
                     child: Text(
-                        "Noodles",
+                        "Pizza",
                         style: TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.bold,
@@ -118,14 +118,14 @@ class _RecipeListState extends State<RecipeList> {
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(15),
                   image: DecorationImage(
-                      image: NetworkImage('assets/pasta.jpg')
+                      image: NetworkImage('assets/noodle.jpg')
                   )
               ),
               child: Center(
                   child: Align(
                     alignment: Alignment.bottomCenter,
                     child: Text(
-                        "Pasta",
+                        "Noodle",
                         style: TextStyle(
                           fontSize: 20,
                           fontWeight: FontWeight.bold,
