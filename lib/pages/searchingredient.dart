@@ -1,19 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:fridge_out/pages/IngredientModel.dart';
-class SearchByIngredients extends StatelessWidget {
 
+class SearchByIngredients extends StatefulWidget {
   @override
-  Widget build(BuildContext context) {
-    return Container();
-  }
+  _SearchByIngredients createState() => _SearchByIngredients();
 }
 
-class HomePage extends StatefulWidget {
-  @override
-  _HomePageState createState() => _HomePageState();
-}
-
-class _HomePageState extends State<HomePage> {
+class _SearchByIngredients extends State<SearchByIngredients> {
   List<IngredientModel> contacts = [
     IngredientModel("Beef", false),
     IngredientModel("Pork", false),
@@ -22,6 +15,7 @@ class _HomePageState extends State<HomePage> {
     IngredientModel("Mushroom", false),
     IngredientModel("Tomato", false),
     IngredientModel("Chicken", false),
+    IngredientModel("Egg", false)
   ];
 
   List<IngredientModel> selectedContacts = [];
@@ -67,7 +61,9 @@ class _HomePageState extends State<HomePage> {
                       ),
                     ),
                     onPressed: () {
-                      print("Searchh: ${selectedContacts.length}");
+                      // print("Search: ${selectedContacts.length}");
+                      // Navigator.push(context,
+                      //     MaterialPageRoute(builder: (context) => RecipePage()));
                     },
                   ),
                 ),
