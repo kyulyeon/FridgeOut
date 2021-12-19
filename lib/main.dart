@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:fridge_out/pages/home.dart';
 
+import 'customwidgets/slideinbar.dart';
+
 void main() => runApp(fridgeOut());
 
 class fridgeOut extends StatelessWidget {
@@ -13,8 +15,9 @@ class fridgeOut extends StatelessWidget {
       theme: ThemeData(
         primaryColor: Colors.amber,
       ),
-      home: homePage(),
-    );
+      home:  homePage(),
+
+      );
   }
 }
 
