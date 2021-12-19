@@ -10,12 +10,26 @@ class _SearchByIngredients extends State<SearchByIngredients> {
   List<IngredientModel> contacts = [
     IngredientModel("Beef", false),
     IngredientModel("Pork", false),
+    IngredientModel("Ham", false),
+    IngredientModel("Turkey", false),
+    IngredientModel("Chicken", false),
+    IngredientModel("Lamb Meat", false),
     IngredientModel("Garlic", false),
     IngredientModel("Onion", false),
     IngredientModel("Mushroom", false),
     IngredientModel("Tomato", false),
-    IngredientModel("Chicken", false),
-    IngredientModel("Egg", false)
+    IngredientModel("Egg", false),
+    IngredientModel("Spinach", false),
+    IngredientModel("Lettuce", false),
+    IngredientModel("Milk", false),
+    IngredientModel("Cheese", false),
+    IngredientModel("Green Onions", false),
+    IngredientModel("Cucumber", false),
+    IngredientModel("Zucchini", false),
+    IngredientModel("Shrimp", false),
+    IngredientModel("Salmon", false),
+    IngredientModel("Squids", false),
+    IngredientModel("Mussels", false)
   ];
 
   List<IngredientModel> selectedContacts = [];
