@@ -47,6 +47,7 @@ class _LandingRecipeState extends State<LandingRecipe> {
               "Recipe of the Day",
               style: TextStyle(
                 fontSize: 15,
+                fontWeight: FontWeight.bold,
                 color: Colors.white,
               ),
             ),
@@ -54,6 +55,7 @@ class _LandingRecipeState extends State<LandingRecipe> {
               "Deliciousness Recipe",
               style: TextStyle(
                 fontSize: 25,
+                fontWeight: FontWeight.bold,
                 color: Colors.white,
               ),
             ),
@@ -65,13 +67,14 @@ class _LandingRecipeState extends State<LandingRecipe> {
                   children: [
                     Icon(
                         Icons.timer_rounded,
-                        size: 20,
+                        size: 25,
                         color: Colors.white),
                     SizedBox(width: 10,),
                     Text(
                       "60 min",
                       style: TextStyle(
-                        fontSize: 14,
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold,
                         color: Colors.white,
                       ),
                     ),

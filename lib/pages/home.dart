@@ -6,12 +6,12 @@ import 'package:fridge_out/customwidgets/recipeoftheday.dart';
 import 'package:fridge_out/customwidgets/recipeselection.dart';
 import 'package:fridge_out/customwidgets/slideinbar.dart';
 
-class HomePage extends StatefulWidget {
+class SearchByIngredients extends StatefulWidget {
   @override
-  _HomePageState createState() => _HomePageState();
+  _SearchByIngredientsState createState() => _SearchByIngredientsState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _SearchByIngredientsState extends State<SearchByIngredients> {
   List<IngredientModel> contacts = [
     IngredientModel("Beef", false),
     IngredientModel("Pork", false),
@@ -118,14 +118,15 @@ class homePage extends StatefulWidget {
 }
 
 class _homePageState extends State<homePage> {
+
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
       drawer: slidingNav(),
         appBar: AppBar(
           backgroundColor: Colors.amber[300],
           title: Text('Fridge Out'),
-
         ),
           body: Center(
               child: SingleChildScrollView(

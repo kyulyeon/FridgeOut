@@ -11,38 +11,152 @@ class RecipeList extends StatefulWidget {
 class _RecipeListState extends State<RecipeList> {
   @override
   Widget build(BuildContext context) {
+
     return Container(
-        height: 500,
-        width: MediaQuery.of(context).size.width,
-        child: Stack(
+      width: MediaQuery.of(context).size.width,
+      height: 500,
+        decoration: BoxDecoration(
+            color: Colors.amber.shade300.withOpacity(0.1),
+            borderRadius: BorderRadius.circular(15),
+        ),
+        child: GridView.count(
+          primary: false,
+          crossAxisSpacing: 10,
+          mainAxisSpacing: 10,
+          crossAxisCount: 2,
           children: [
             Container(
-              width: MediaQuery.of(context).size.width,
-              height: 500,
+              padding: EdgeInsets.only(bottom: 5),
               decoration: BoxDecoration(
-                  gradient: LinearGradient(
-                    colors: [
-                      Colors.amber.shade300,
-                      Colors.amber.shade100,
-                    ],
-                    begin: Alignment.bottomLeft,
-                    end: Alignment.centerRight,
-                  ),
-                  borderRadius: BorderRadius.only(
-                    topLeft: Radius.circular(10),
-                    bottomRight: Radius.circular(10),
-                    bottomLeft: Radius.circular(10),
-                    topRight: Radius.circular(10),
-                  ),
-                  boxShadow: [
-                    BoxShadow(
-                      offset: Offset(5, 10),
-                      blurRadius: 20,
-                      color: Colors.amber.shade100.withOpacity(0.3),
-                    )
-                  ]
+                borderRadius: BorderRadius.circular(15),
+                image: DecorationImage(
+                  image: NetworkImage('assets/pasta.jpg')
+                ),
               ),
-            )
+              child: Center(
+                child: Align(
+                  alignment: Alignment.bottomCenter,
+                  child: Text(
+                    "Pasta",
+                    style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.amber.shade300.withOpacity(0.8),
+                    )
+                  ),
+                )
+              ),
+            ),
+            Container(
+              padding: EdgeInsets.only(bottom: 5),
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(15),
+                  image: DecorationImage(
+                      image: NetworkImage('assets/salad.jpg')
+                  ),
+              ),
+              child: Center(
+                  child: Align(
+                    alignment: Alignment.bottomCenter,
+                    child: Text(
+                        "Salad",
+                        style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.amber.shade300.withOpacity(0.8),
+                        )
+                    ),
+                  )
+              ),
+            ),
+            Container(
+              padding: EdgeInsets.only(bottom: 5),
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(15),
+                  image: DecorationImage(
+                      image: NetworkImage('assets/pizza.jpg')
+                  )
+              ),
+              child: Center(
+                  child: Align(
+                    alignment: Alignment.bottomCenter,
+                    child: Text(
+                        "Pizza",
+                        style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.amber.shade300.withOpacity(0.8),
+                        )
+                    ),
+                  )
+              ),
+            ),
+            Container(
+              padding: EdgeInsets.only(bottom: 5),
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(15),
+                  image: DecorationImage(
+                      image: NetworkImage('assets/sushi.jpg')
+                  )
+              ),
+              child: Center(
+                  child: Align(
+                    alignment: Alignment.bottomCenter,
+                    child: Text(
+                        "Sushi",
+                        style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.amber.shade300.withOpacity(0.8),
+                        )
+                    ),
+                  )
+              ),
+            ),
+            Container(
+              padding: EdgeInsets.only(bottom: 5),
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(15),
+                  image: DecorationImage(
+                      image: NetworkImage('assets/noodle.jpg')
+                  )
+              ),
+              child: Center(
+                  child: Align(
+                    alignment: Alignment.bottomCenter,
+                    child: Text(
+                        "Noodle",
+                        style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.amber.shade300.withOpacity(0.8),
+                        )
+                    ),
+                  )
+              ),
+            ),
+            Container(
+              padding: EdgeInsets.only(bottom: 5),
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(15),
+                  image: DecorationImage(
+                      image: NetworkImage('assets/rice.jpg')
+                  )
+              ),
+              child: Center(
+                  child: Align(
+                    alignment: Alignment.bottomCenter,
+                    child: Text(
+                        "Fried Rice",
+                        style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.amber.shade300.withOpacity(0.8),
+                        )
+                    ),
+                  )
+              ),
+            ),
           ],
         )
     );
