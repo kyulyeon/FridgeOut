@@ -50,7 +50,7 @@ class _RecipeSelectionState extends State<RecipeSelection> {
                     style: TextStyle(
                       fontSize: 20,
                       fontWeight: FontWeight.bold,
-                      color: Colors.amber.shade300,
+                      color: Colors.amber.shade300.withOpacity(0.8),
                     ),
                   )
                 ],
