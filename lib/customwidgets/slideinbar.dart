@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:fridge_out/pages/allrecipes.dart';
 import 'package:fridge_out/pages/home.dart';
+import 'package:fridge_out/pages/loading.dart';
 import 'package:fridge_out/pages/searchingredient.dart';
 
 class slidingNav extends StatelessWidget {
@@ -29,7 +30,10 @@ class slidingNav extends StatelessWidget {
               title: Text(
                   'Home',
               style: TextStyle(color: Colors.white, fontSize: 25)),
-              onTap: () {
+              onTap: () async {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Loading()));
+                await Future.delayed(const Duration(seconds: 1), (){});
                 Navigator.push(context,
                     MaterialPageRoute(builder: (context) => homePage()));
               },
@@ -41,7 +45,10 @@ class slidingNav extends StatelessWidget {
                 'All Recipes',
                 style: TextStyle(color: Colors.white, fontSize: 25),
             ),
-            onTap: () {
+            onTap: () async {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => Loading()));
+              await Future.delayed(const Duration(seconds: 1), (){});
               Navigator.push(context,
                   MaterialPageRoute(builder: (context) => AllRecipes()));
             },
@@ -52,7 +59,10 @@ class slidingNav extends StatelessWidget {
               'Search By Ingredients',
               style: TextStyle(color: Colors.white, fontSize: 25),
             ),
-            onTap: () {
+            onTap: () async {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => Loading()));
+              await Future.delayed(const Duration(seconds: 1), (){});
               Navigator.push(context,
                   MaterialPageRoute(builder: (context) => SearchByIngredients()));
             },

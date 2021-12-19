@@ -11,14 +11,15 @@ class homePage extends StatefulWidget {
 }
 
 class _homePageState extends State<homePage> {
+
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
       drawer: slidingNav(),
         appBar: AppBar(
           backgroundColor: Colors.amber[300],
           title: Text('Fridge Out'),
-
         ),
           body: Center(
               child: SingleChildScrollView(
